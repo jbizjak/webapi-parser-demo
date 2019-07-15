@@ -1,0 +1,11 @@
+#%RAML 1.0
+uses:
+  Library: library.raml
+
+/users/{id}:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: Library.typeOne
